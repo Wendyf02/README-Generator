@@ -1,27 +1,32 @@
+
+// importing
 const inquirer = require("inquirer")
 const fs = require('fs');
+const readme = "README.md";
 const util = require("util");
+const generateMarkdown = require('./util/genrateMarkdown');
+
+// const {prompt} = readme
 
 
-// const generateMarkdown = require("./util/generateMarkdown.js");
-
-inquirer.prompt([ 
+// array of questions for user
+const questions = [ 
     {
         type: "input",
-        message: "what is the title of your README project ?",
+        message: "what is your project's title?",
         name: "Title"
     },
     
     {
         type: "input",
-        message: "table of Contents",
-        name: " Table of Contents"
+        message: "what would you like to put into the description or your README?",
+        name: "Description"
     },
 
     {
         type: "input",
-        message: "what would you like to put into the description or your README?",
-        name: "Description"
+        message: "table of Contents",
+        name: " Table of Contents"
     },
 
     {
@@ -55,6 +60,12 @@ inquirer.prompt([
         message: " contributors?",
         name: "Contributors"
     },
+     
+    {
+        type: "input",
+        message: "How do you test your project?",
+        name: "Test"
+    },
 
     {
         type: "input",
@@ -64,16 +75,40 @@ inquirer.prompt([
 
     {
         type: "input",
-        message: " your  Github Username",
+        message: " what is your  Github Username",
         name: "Username"
     },
 
     {
         type: "input",
-        message: "what is yoyr email?",
+        message: "what is your email?",
         name: "Email"
 
 
     },
 
-])
+];
+
+// function to write file
+function writeToFile(fileName , data) {
+   fs.writeFile(fileName, data, err => { 
+      if (err) {
+          throw err;
+      }
+   });
+}
+
+// function to initialize program 
+ function init()  {
+     prompt(question).then(answers => { 
+
+        const response = generateMarkdown(answers);
+        console.log(answers);
+
+        writeToFile("README.md" , response);
+     })
+
+ }
+
+ // function call to initialize program
+ init();

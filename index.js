@@ -4,9 +4,7 @@ const inquirer = require("inquirer")
 const fs = require('fs');
 const readme = "README.md";
 const util = require("util");
-const generateMarkdown = require('./util/genrateMarkdown');
-
-// const {prompt} = readme
+const generateMarkdown = require('./util/generatedMarkdown');
 
 
 // array of questions for user
@@ -25,12 +23,6 @@ const questions = [
 
     {
         type: "input",
-        message: "table of Contents",
-        name: " Table of Contents"
-    },
-
-    {
-        type: "input",
         message: " what are the steps required to install your README project?",
         name: "Installation"
     },
@@ -38,12 +30,12 @@ const questions = [
     {
         type: "input",
         message: " provide instruction for use",
-        name: " Usage"
+        name: "Usage"
 
     },
 
     {
-        type: "input",
+        type: "list",
         message: "Select lincense",
         name: "Lincense",
         choices: [
@@ -100,7 +92,7 @@ function writeToFile(fileName , data) {
 
 // function to initialize program 
  function init()  {
-     prompt(question).then(answers => { 
+    inquirer.prompt(questions).then(answers => { 
 
         const response = generateMarkdown(answers);
         console.log(answers);

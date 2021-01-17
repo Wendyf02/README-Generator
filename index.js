@@ -11,45 +11,45 @@ const generateMarkdown = require('./util/generatedMarkdown');
 const questions = [ 
     {
         type: "input",
-        message: "what is your project's title?",
+        message: "what is your project title?",
         name: "Title"
     },
     
     {
         type: "input",
-        message: "what would you like to put into the description or your README?",
+        message: "what is a good description of your project?",
         name: "Description"
     },
 
     {
         type: "input",
-        message: " what are the steps required to install your README project?",
+        message: "what are the steps required to install your application?",
         name: "Installation"
     },
 
     {
         type: "input",
-        message: " provide instruction for use",
+        message: "How do you use your application?",
         name: "Usage"
 
     },
 
     {
         type: "list",
-        message: "Select lincense",
-        name: "Lincense",
+        message: "What license did you use for this application? please select",
+        name: "License",
         choices: [
             "MIT",
-            "GVL-GPL 3.0",
+            "GNU 2.0",
+            "GNU 3.0",
             "APACHE 2.0",
-            "BSD 3",
             "None"
         ]
     },
 
     {
         type: "input",
-        message: " contributors?",
+        message: "Who contributed to this projects?",
         name: "Contributors"
     },
      

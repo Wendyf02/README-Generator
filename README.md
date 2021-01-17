@@ -1,4 +1,4 @@
- # Readme 
+ # README 
   ## Table of Contents
   * [Description](#description)
   * [Installation](#installation)
@@ -7,20 +7,27 @@
   * [Contributors](#contributors)
   * [Test](#test)
   * [Questions](#questions)
+  
   ## Description
-  give detail of project
+  This app allows developers to create a professional README .md file in a clean efficient easy way
+
   ## Installation
-  run npm install
+  This app inquire , fs util
+
   ## Usage
-  
+  run in the terminal
+
   ## Lincense
-  MIT
+  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
   ## Contributors
-  none
+  n/a
+
   ## Test
-  none
-  ## Questions
-  Contact me:   
-  Github: https://github.com/wendyf02   
-  Email: wendyf02@yahoo.com
+  node index.js
   
+  ## Questions
+
+  Contact me:   
+  Github: https://github.com/https://github.com/wendyf02    
+  Email: wendyf02@yahoo.com

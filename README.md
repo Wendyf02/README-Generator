@@ -1,4 +1,4 @@
- # README 
+ # README-Generator 
   ## Table of Contents
   * [Description](#description)
   * [Installation](#installation)
@@ -9,10 +9,10 @@
   * [Questions](#questions)
   
   ## Description
-  This app allows developers to create a professional README .md file in a clean efficient easy way
+  This app allows developer to create a professional Readme.md file in a clean efficient and easy way.
 
   ## Installation
-  This app inquire , fs util
+  must with npm
 
   ## Usage
   run in the terminal
@@ -29,6 +29,5 @@
   ## Questions
 
   Contact me:   
-  Github: https://github.com/https://github.com/wendyf02    
-  Email: wendyf02@yahoo.com
-    
+  Github: https://github.com/wendyf02   
+  Email: camomila444@gmail.com

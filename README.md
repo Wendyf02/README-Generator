@@ -9,13 +9,13 @@
   * [Questions](#questions)
   
   ## Description
-  This app allows developer to create a professional Readme.md file in a clean efficient and easy way.
+  This app allows developer to create a professional README.md file in a way that is clean,efficient an easy to use.
 
   ## Installation
-  must with npm
+  must intall npm
 
   ## Usage
-  run in the terminal
+  run in terminal
 
   ## Lincense
   ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
